@@ -1,0 +1,89 @@
+.question-block {
+  margin: 20px 0;
+  text-align: center; /* Center all text in the question block */
+  padding: 20px; /* Add padding for better spacing */
+  border: 2px solid #8b4513; /* Border color for the block */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f0f8ff; /* Light background color */
+}
+
+.question-text {
+  font-size: 1.5rem; /* Increased font size for better readability */
+  margin-bottom: 20px;
+  color: #8b4513; /* Dark brown color for question text */
+}
+
+.instruction {
+  margin-bottom: 10px;
+  font-size: small;
+  font-style: italic;
+  color: red; /* Set font color to red */
+}
+
+.instruction.emphasized {
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  font-size: 1.2rem; /* Slightly increase font size */
+}
+
+.options-container {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.option-item {
+  margin-bottom: 10px; /* Add space between options */
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none; /* Hide the default radio button */
+}
+
+.custom-checkbox::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc; /* Default border color */
+  border-radius: 4px; /* Square checkbox */
+  margin-right: 10px; /* Space between checkbox and text */
+  display: inline-block; /* To place next to text */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.option-item.correct .custom-checkbox::before {
+  border-color: green; /* Green border for correct answers */
+  background-color: rgba(0, 255, 0, 0.2); /* Light green background */
+}
+
+.option-item.wrong .custom-checkbox::before {
+  border-color: red; /* Red border for wrong answers */
+  background-color: rgba(255, 0, 0, 0.2); /* Light red background */
+}
+
+.custom-checkbox input:checked + .custom-checkbox::before {
+  background-color: #007bff; /* Background color when checked */
+}
+
+.custom-checkbox input:checked + .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: white; /* Inner square color when checked */
+}
+
+/* Additional style for title */
+.title {
+  color: #8b4513; /* Dark brown color for title */
+  font-size: 2rem; /* Title font size */
+  margin-bottom: 20px; /* Space below title */
+}

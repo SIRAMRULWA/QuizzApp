@@ -1,0 +1,36 @@
+.quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+h2.question-count {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+button.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.next-button:hover {
+  background-color: #0056b3;
+}
+
+button.next-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

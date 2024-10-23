@@ -1,0 +1,9 @@
+.app-title {
+  text-align: center; /* Center the title */
+  font-size: 2.5rem; /* Increase font size */
+  color: #4a90e2; /* Set a nice blue color */
+  font-family: "Arial", sans-serif; /* Use a sans-serif font */
+  margin-top: 0px; /* Add some space above */
+  margin-bottom: 0px; /* Add some space below */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
